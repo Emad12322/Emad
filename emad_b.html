@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scound page </title>
+</head>
+<body>
+    <h1>the information</h1>
+    <p id="NAME"></p>
+    <p id="JOB"></p>
+    <a href="emad_a.html">الرجوع الئ الصفحة الرئيسية</a>
+
+    <script>
+        const urlparams = new URLSearchParams(window.location.search);
+        const name = urlparams.get('name');
+        document.getElementById('NAME').textContent = 'the name : $(name)';
+    </script>
+</body>
+</html>
